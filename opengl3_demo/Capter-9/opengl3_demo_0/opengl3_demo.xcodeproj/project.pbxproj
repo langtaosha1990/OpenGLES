@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F351BB4E2939EE0500B0D1FD /* textureHelper.c in Sources */ = {isa = PBXBuildFile; fileRef = F351BB4D2939EE0500B0D1FD /* textureHelper.c */; };
+		F3C2E4E52936F7050009FBF9 /* FileWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C2E4E42936F7050009FBF9 /* FileWrapper.m */; };
+		F3C2E4E729388B540009FBF9 /* basemap.tga in Resources */ = {isa = PBXBuildFile; fileRef = F3C2E4E629388B540009FBF9 /* basemap.tga */; };
+		F3C2E4E9293893690009FBF9 /* lightmap.tga in Resources */ = {isa = PBXBuildFile; fileRef = F3C2E4E8293893690009FBF9 /* lightmap.tga */; };
+		F3C2E4EB29389B3E0009FBF9 /* LightShader_V.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F3C2E4EA29389B3E0009FBF9 /* LightShader_V.glsl */; };
+		F3C2E4ED29389B470009FBF9 /* LightShader_F.glsl in Resources */ = {isa = PBXBuildFile; fileRef = F3C2E4EC29389B470009FBF9 /* LightShader_F.glsl */; };
+		F3EEA56E28F149BE004A0E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EEA56D28F149BE004A0E68 /* AppDelegate.swift */; };
+		F3EEA57228F149BE004A0E68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EEA57128F149BE004A0E68 /* ViewController.swift */; };
+		F3EEA57528F149BE004A0E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EEA57328F149BE004A0E68 /* Main.storyboard */; };
+		F3EEA57728F149C0004A0E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3EEA57628F149C0004A0E68 /* Assets.xcassets */; };
+		F3EEA57A28F149C0004A0E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EEA57828F149C0004A0E68 /* LaunchScreen.storyboard */; };
+		F3EEA58828F14A23004A0E68 /* esTransform.c in Sources */ = {isa = PBXBuildFile; fileRef = F3EEA58428F14A23004A0E68 /* esTransform.c */; };
+		F3EEA58928F14A23004A0E68 /* esShader.c in Sources */ = {isa = PBXBuildFile; fileRef = F3EEA58528F14A23004A0E68 /* esShader.c */; };
+		F3EEA58A28F14A23004A0E68 /* esUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F3EEA58628F14A23004A0E68 /* esUtil.c */; };
+		F3EEA58B28F14A23004A0E68 /* esShapes.c in Sources */ = {isa = PBXBuildFile; fileRef = F3EEA58728F14A23004A0E68 /* esShapes.c */; };
+		F3EEA59428F15711004A0E68 /* Hello_Triangle.c in Sources */ = {isa = PBXBuildFile; fileRef = F3EEA59328F15711004A0E68 /* Hello_Triangle.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F351BB4C2939EE0500B0D1FD /* textureHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = textureHelper.h; sourceTree = "<group>"; };
+		F351BB4D2939EE0500B0D1FD /* textureHelper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = textureHelper.c; sourceTree = "<group>"; };
+		F3C2E4E32936F7050009FBF9 /* FileWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWrapper.h; sourceTree = "<group>"; };
+		F3C2E4E42936F7050009FBF9 /* FileWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileWrapper.m; sourceTree = "<group>"; };
+		F3C2E4E629388B540009FBF9 /* basemap.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = basemap.tga; sourceTree = "<group>"; };
+		F3C2E4E8293893690009FBF9 /* lightmap.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = lightmap.tga; sourceTree = "<group>"; };
+		F3C2E4EA29389B3E0009FBF9 /* LightShader_V.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = LightShader_V.glsl; sourceTree = "<group>"; };
+		F3C2E4EC29389B470009FBF9 /* LightShader_F.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = LightShader_F.glsl; sourceTree = "<group>"; };
+		F3EEA56A28F149BE004A0E68 /* opengl3_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opengl3_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3EEA56D28F149BE004A0E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3EEA57128F149BE004A0E68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3EEA57428F149BE004A0E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3EEA57628F149C0004A0E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3EEA57928F149C0004A0E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3EEA57B28F149C0004A0E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3EEA58228F14A22004A0E68 /* opengl3_demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "opengl3_demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		F3EEA58328F14A23004A0E68 /* esUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esUtil.h; sourceTree = "<group>"; };
+		F3EEA58428F14A23004A0E68 /* esTransform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esTransform.c; sourceTree = "<group>"; };
+		F3EEA58528F14A23004A0E68 /* esShader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esShader.c; sourceTree = "<group>"; };
+		F3EEA58628F14A23004A0E68 /* esUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esUtil.c; sourceTree = "<group>"; };
+		F3EEA58728F14A23004A0E68 /* esShapes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esShapes.c; sourceTree = "<group>"; };
+		F3EEA58E28F14D9F004A0E68 /* esUtil_win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esUtil_win.h; sourceTree = "<group>"; };
+		F3EEA59228F15711004A0E68 /* Hello_Triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hello_Triangle.h; sourceTree = "<group>"; };
+		F3EEA59328F15711004A0E68 /* Hello_Triangle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Hello_Triangle.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3EEA56728F149BE004A0E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3EEA56128F149BE004A0E68 = {
+			isa = PBXGroup;
+			children = (
+				F3EEA56C28F149BE004A0E68 /* opengl3_demo */,
+				F3EEA56B28F149BE004A0E68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3EEA56B28F149BE004A0E68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3EEA56A28F149BE004A0E68 /* opengl3_demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3EEA56C28F149BE004A0E68 /* opengl3_demo */ = {
+			isa = PBXGroup;
+			children = (
+				F3EEA56D28F149BE004A0E68 /* AppDelegate.swift */,
+				F3EEA57128F149BE004A0E68 /* ViewController.swift */,
+				F3C2E4E8293893690009FBF9 /* lightmap.tga */,
+				F3C2E4E629388B540009FBF9 /* basemap.tga */,
+				F3C2E4E32936F7050009FBF9 /* FileWrapper.h */,
+				F3C2E4E42936F7050009FBF9 /* FileWrapper.m */,
+				F3EEA59228F15711004A0E68 /* Hello_Triangle.h */,
+				F3EEA59328F15711004A0E68 /* Hello_Triangle.c */,
+				F351BB4C2939EE0500B0D1FD /* textureHelper.h */,
+				F351BB4D2939EE0500B0D1FD /* textureHelper.c */,
+				F3C2E4EA29389B3E0009FBF9 /* LightShader_V.glsl */,
+				F3C2E4EC29389B470009FBF9 /* LightShader_F.glsl */,
+				F3EEA58128F149EB004A0E68 /* util */,
+				F3EEA57328F149BE004A0E68 /* Main.storyboard */,
+				F3EEA57628F149C0004A0E68 /* Assets.xcassets */,
+				F3EEA57828F149C0004A0E68 /* LaunchScreen.storyboard */,
+				F3EEA57B28F149C0004A0E68 /* Info.plist */,
+			);
+			path = opengl3_demo;
+			sourceTree = "<group>";
+		};
+		F3EEA58128F149EB004A0E68 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				F3EEA58E28F14D9F004A0E68 /* esUtil_win.h */,
+				F3EEA58528F14A23004A0E68 /* esShader.c */,
+				F3EEA58728F14A23004A0E68 /* esShapes.c */,
+				F3EEA58428F14A23004A0E68 /* esTransform.c */,
+				F3EEA58628F14A23004A0E68 /* esUtil.c */,
+				F3EEA58328F14A23004A0E68 /* esUtil.h */,
+				F3EEA58228F14A22004A0E68 /* opengl3_demo-Bridging-Header.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3EEA56928F149BE004A0E68 /* opengl3_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3EEA57E28F149C0004A0E68 /* Build configuration list for PBXNativeTarget "opengl3_demo" */;
+			buildPhases = (
+				F3EEA56628F149BE004A0E68 /* Sources */,
+				F3EEA56728F149BE004A0E68 /* Frameworks */,
+				F3EEA56828F149BE004A0E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = opengl3_demo;
+			productName = opengl3_demo;
+			productReference = F3EEA56A28F149BE004A0E68 /* opengl3_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3EEA56228F149BE004A0E68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					F3EEA56928F149BE004A0E68 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = F3EEA56528F149BE004A0E68 /* Build configuration list for PBXProject "opengl3_demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3EEA56128F149BE004A0E68;
+			productRefGroup = F3EEA56B28F149BE004A0E68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3EEA56928F149BE004A0E68 /* opengl3_demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3EEA56828F149BE004A0E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3EEA57A28F149C0004A0E68 /* LaunchScreen.storyboard in Resources */,
+				F3C2E4ED29389B470009FBF9 /* LightShader_F.glsl in Resources */,
+				F3EEA57728F149C0004A0E68 /* Assets.xcassets in Resources */,
+				F3C2E4EB29389B3E0009FBF9 /* LightShader_V.glsl in Resources */,
+				F3C2E4E729388B540009FBF9 /* basemap.tga in Resources */,
+				F3EEA57528F149BE004A0E68 /* Main.storyboard in Resources */,
+				F3C2E4E9293893690009FBF9 /* lightmap.tga in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3EEA56628F149BE004A0E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3EEA58928F14A23004A0E68 /* esShader.c in Sources */,
+				F3C2E4E52936F7050009FBF9 /* FileWrapper.m in Sources */,
+				F3EEA57228F149BE004A0E68 /* ViewController.swift in Sources */,
+				F351BB4E2939EE0500B0D1FD /* textureHelper.c in Sources */,
+				F3EEA59428F15711004A0E68 /* Hello_Triangle.c in Sources */,
+				F3EEA56E28F149BE004A0E68 /* AppDelegate.swift in Sources */,
+				F3EEA58B28F14A23004A0E68 /* esShapes.c in Sources */,
+				F3EEA58828F14A23004A0E68 /* esTransform.c in Sources */,
+				F3EEA58A28F14A23004A0E68 /* esUtil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3EEA57328F149BE004A0E68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3EEA57428F149BE004A0E68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3EEA57828F149C0004A0E68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3EEA57928F149C0004A0E68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3EEA57C28F149C0004A0E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3EEA57D28F149C0004A0E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3EEA57F28F149C0004A0E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SX7EYW9LC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = opengl3_demo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gpf.test.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "opengl3_demo/util/opengl3_demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3EEA58028F149C0004A0E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SX7EYW9LC7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = opengl3_demo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gpf.test.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "opengl3_demo/util/opengl3_demo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3EEA56528F149BE004A0E68 /* Build configuration list for PBXProject "opengl3_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3EEA57C28F149C0004A0E68 /* Debug */,
+				F3EEA57D28F149C0004A0E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3EEA57E28F149C0004A0E68 /* Build configuration list for PBXNativeTarget "opengl3_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3EEA57F28F149C0004A0E68 /* Debug */,
+				F3EEA58028F149C0004A0E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3EEA56228F149BE004A0E68 /* Project object */;
+}
